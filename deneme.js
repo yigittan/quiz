@@ -19,7 +19,7 @@ Quiz.prototype.getQuestion = function(){
 }
 
 Quiz.prototype.isFinish = function() {
-    return this.questions.length === this.questionsIndex;
+    return this.questions.length === this.questionIndex;
 }
 
 Quiz.prototype.guess = function(answer) {
@@ -28,7 +28,7 @@ Quiz.prototype.guess = function(answer) {
     if (question.controlAnswer(answer)) {
         this.score++;
     }
-    this.questionsIndex++;
+    this.questionIndex++;
 }
 
 let q1 = new Question("telefonunun rengi nedir?",["Siyah","Gri","Gümüş","Beyaz"],"Siyah");
@@ -55,7 +55,8 @@ function loadQuestion() {
             let element = document.querySelector("#choice"+i);
             element.innerHTML = choices[i];
 
-            guess("btn"+i,choices[i])
+            guess(`btn${i}`,choices[i])
+            console.log(i)
         }
     }
 }
