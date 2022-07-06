@@ -15,7 +15,7 @@ Question.prototype.controlAnswer = function(answer) {
 }
 
 Quiz.prototype.getQuestion = function(){
-    return this.questions[this.questionsIndex];
+    return this.questions[this.questionIndex];
 }
 
 Quiz.prototype.isFinish = function() {
@@ -52,7 +52,7 @@ function loadQuestion() {
         document.querySelector("#question-text").innerHTML = question.text;
 
         for (let i=0; i<choices.length;i++) {
-            let element = document.querySelector(`#choices${i}`);
+            let element = document.querySelector("#choice"+i);
             element.innerHTML = choices[i];
 
             guess("btn"+i,choices[i])
