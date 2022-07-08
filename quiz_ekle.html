@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="quiz_ekle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-5" style="width: 300px;">
+        <div class="row">
+            <form>
+                <div class="col-12 mt-1">
+                    <div class="input-group" id="enterQuestion">
+                        <input type="text" class="form-control question" placeholder="Question">
+                    </div>
+                </div>
+                <div class="col-12 mt-1">
+                    <div class="input-group choice0">
+                        <input type="text" class="form-control input0" placeholder="Answer0">
+                    </div>
+                </div>
+                <div class="col-12 mt-1">
+                    <div class="input-group choice1">
+                        <input type="text" class="form-control input1" placeholder="Answer1">
+                    </div>
+                </div>
+                <div class="col-12 mt-1">
+                    <div class="input-group choice2">
+                        <input type="text" class="form-control input2" placeholder="Answer2">
+                    </div>
+                </div>
+                <div class="col-12 mt-1">
+                    <div class="input-group choice3">
+                        <input type="text" class="form-control input3" placeholder="Answer3">
+                    </div>
+                </div>
+                <div class="col-12 mt-1">
+                    <div class="input-group" id="answer">
+                        <input type="text" class="form-control" placeholder="answerCorrect">
+                    </div>
+                </div>
+                <div class="col-12 mt-1">
+                   <button type="submit" class="form-control">Create Question</button>
+                <div class="col-12 mt-1">
+                <button type="reset" class="form-control">Reset</button>
+        </div>
+    </div>
+    <div class="container mt-5" style="width: 500px;">
+        <div class="row">
+            <div class="col-12 mt-1">
+                <div class="input-group">
+                    <div class="list-item" id="question">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-1">
+                <div class="list-item" id="Answer0">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-12 mt-1">
+                <div class="list-item" id="Answer1">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-12 mt-1">
+                <div class="list-item" id="Answer2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-12 mt-1">
+                <div class="list-item" style="border-radius: 15px;" id="Answer3" >
+                    <input type="text" class="form-control" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz_ekle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
